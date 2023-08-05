@@ -1,0 +1,14 @@
+Flask==2.3.2
+openai==0.27.8
+openapi-schema-pydantic==1.2.4
+langchain==0.0.234
+langcodes==3.3.0
+langsmith==0.0.5
+libclang==16.0.6
+faiss-cpu==1.7.4
+tiktoken==0.4.0
+
+
+
+
+

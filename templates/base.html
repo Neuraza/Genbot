@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+</head>
+<body>
+<div class="container">
+    <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <!-- <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image"> -->
+                    <img src="static\images\logo-with-bg.png" alt="ChatBot">
+                </div>
+                <div class="chatbox__content--header">
+                    <!-- <h4 class="chatbox__heading--header">Chat support</h4> -->
+                    <!-- <p class="chatbox__description--header">Hi. How can I help you?</p> -->
+                    <h4 class="chatbox__heading--header">Blue</h4>
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div></div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Write a message...">
+                <div class="send-btn">
+                    <img src="static\images\icons8-sent-48 (2).png" alt="Send">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <g clip-path="url(#clip0_1906_1455)">
+                        <g filter="url(#filter0_d_1906_1455)">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.000869492 10.6836C-0.0163849 10.2688 0.224476 9.88645 0.606086 9.7229L20.4051 1.23762C20.7809 1.07655 21.217 1.16052 21.5061 1.44966C21.7952 1.7388 21.8792 2.17484 21.7181 2.55069L13.2329 22.3497C13.0693 22.7313 12.687 22.9721 12.2722 22.9549C11.8573 22.9376 11.4963 22.6659 11.365 22.272L9.0593 15.3548L15.7071 8.70698C16.0976 8.31646 16.0976 7.6833 15.7071 7.29277C15.3166 6.90225 14.6834 6.90225 14.2929 7.29277L7.66715 13.9185L0.683778 11.5907C0.289903 11.4594 0.0181238 11.0984 0.000869492 10.6836Z" fill="url(#paint0_linear_1906_1455)" shape-rendering="crispEdges"/>
+                        </g>
+                    </g>
+                    <defs>
+                        <filter id="filter0_d_1906_1455" x="-4" y="1.15674" width="29.7991" height="29.7991" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="4"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1906_1455"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1906_1455" result="shape"/>
+                        </filter>
+                        <linearGradient id="paint0_linear_1906_1455" x1="10.8995" y1="1.15674" x2="10.8995" y2="22.9558" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#3747D6"/>
+                        <stop offset="1" stop-color="#3747D6" stop-opacity="0.41"/>
+                        </linearGradient>
+                        <clipPath id="clip0_1906_1455">
+                        <rect width="24" height="24" fill="white"/>
+                        </clipPath>
+                    </defs>
+                    </svg> -->
+                </div>
+            </div>
+        </div>
+        <div class="chatbox__button">
+            <button>
+                <div class="chat-btn">
+                    <div style="display: block;" id="bot">
+                        <img src=".\static\images\logo-with-bg.png" width="40rem" height="40rem" style="border-radius: 112.5px;" />
+                    </div>
+                    <div style="display: none;" id="close">
+                        <img src=".\static\images\Close-btn.png" alt="Close">
+                    </div>
+                </div>
+            </button>
+        </div>
+    </div>
+</div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+</body>
+</html>
